@@ -46,6 +46,15 @@ This behavior is expected since Logistic Regression is a linear model and does n
 
 ---
 
+## Confusion Matrix
+
+The confusion matrix below shows strong diagonal dominance, indicating correct classification for most digits.  
+Misclassifications mainly occur between visually similar digits such as 5 and 3, and 8 and 9.
+
+![Confusion Matrix](confusion_matrix.png)
+
+---
+
 ## Observations
 
 - Normalizing pixel values significantly improves training stability and performance  
