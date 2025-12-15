@@ -64,6 +64,41 @@ print("Test accuracy:", accuracy)
 
 
 
+'''  
+
+# ==============================
+# Optional: Random Forest Model
+# ==============================
+
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+
+print("\nTraining Random Forest model...")
+
+rf_model = RandomForestClassifier(
+    n_estimators=100,
+    max_depth=None,
+    random_state=42,
+    n_jobs=-1
+)
+
+rf_model.fit(X_train, y_train)
+
+rf_pred = rf_model.predict(X_test)
+
+rf_accuracy = accuracy_score(y_test, rf_pred)
+print("Random Forest Test Accuracy:", rf_accuracy)
+
+'''
+
+
+
+
+
+
+
+
+
 cm = confusion_matrix(y_test, y_pred)
 
 plt.figure(figsize=(8, 6))
@@ -72,6 +107,7 @@ plt.xlabel("Predicted")
 plt.ylabel("Actual")
 plt.title("Confusion Matrix - MNIST")
 plt.show()
+
 
 import random
 

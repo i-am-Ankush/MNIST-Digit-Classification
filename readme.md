@@ -55,6 +55,15 @@ Misclassifications mainly occur between visually similar digits such as 5 and 3,
 
 ---
 
+
+## Optional Experiment
+
+As an extension, I also experimented with a Random Forest classifier using the same train–test split.
+
+While the Random Forest achieved higher accuracy, I didnt used it as the primary model in order to keep the pipeline simple, fast, and interpretable. The main focus of this project was correctness and understanding rather than maximizing accuracy.
+ 
+---
+
 ## Observations
 
 - Normalizing pixel values significantly improves training stability and performance  
